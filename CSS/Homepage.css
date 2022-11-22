@@ -82,7 +82,7 @@ body{
 
 .Fruit_n_Vegetables::before{
     content: "";
-    background-image: url(../Images/Fruit_n_Vegetables.jpg);
+    background-image: url(/Images/Fruit_n_Vegetables.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -121,7 +121,7 @@ body{
 
 .Meat_n_Fish::before{
     content: "";
-    background-image: url(../Images/Meat_n_Fish.jpg);
+    background-image: url(/Images/Meat_n_Fish.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -145,7 +145,7 @@ body{
 
 .Sweets_n_Cake::before{
     content: "";
-    background-image: url(../Images/Sweets_n_Cake.jpg);
+    background-image: url(/Images/Sweets_n_Cake.jpg);
     background-size: cover;
     position: absolute;
     top: 0px;

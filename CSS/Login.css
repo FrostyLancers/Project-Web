@@ -64,7 +64,7 @@ body{
 
 .Login_Forum::before{
     content: "";
-    background-image: url(../Images/Food_Login4.jpg);
+    background-image: url(/Images/Food_Login4.jpg);
     background-size: 100%;
     position: absolute;
     top: 0px;

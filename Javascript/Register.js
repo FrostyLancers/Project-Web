@@ -1,7 +1,7 @@
 window.onload = RegisterLoad;
 
 function Home_Function(){
-    location.href = 'Homepage.html';
+    location.href = 'index.html';
 }
 
 function RegisterLoad(){
@@ -10,6 +10,6 @@ function RegisterLoad(){
 }
 
 function checkRegister(){
-    window.location.href = "Homepage.html";
+    window.location.href = "index.html";
     alert("OK");
 }

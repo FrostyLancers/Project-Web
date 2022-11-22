@@ -1,7 +1,7 @@
 window.onload
 
 function Home_Function(){
-    location.href = 'Homepage.html';
+    location.href = 'index.html';
 }
 
 function Login_Function(){

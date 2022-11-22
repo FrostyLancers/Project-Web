@@ -1,7 +1,7 @@
 window.onload = loginLoad;
 
 function Home_Function(){
-    location.href = 'Homepage.html';
+    location.href = 'index.html';
 }
 
 function loginLoad(){
@@ -10,6 +10,6 @@ function loginLoad(){
 }
 
 function checkLogin(){
-    window.location.href = "Homepage.html";
+    window.location.href = "index.html";
     alert("OK");
 }
