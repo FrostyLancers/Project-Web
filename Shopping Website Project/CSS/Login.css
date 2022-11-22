@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: Poppins
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    background-color: rgb(237, 235, 235);
+}
+
+.Logo_Section{
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#Logo_Image{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+#Logo_Text{
+    font-family: Mali;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.Header_Headline{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#Home_Button, #Shopping_Page_Button{
+    color: black;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+#Home_Button:hover, #Shopping_Page_Button:hover{
+    color: orange;
+}
+
+/***************************************** Header Section End *********************************/
+
+.Login_Forum{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.Login_Forum::before{
+    content: "";
+    background-image: url(../Images/Food_Login4.jpg);
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.Login_Form{
+    position: relative;
+    background-color: rgb(242, 245, 242);
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.Register_Section{
+    position: relative;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.Login_Forum_Header{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+#Logo{
+    width: 100px;
+    border-radius: 100px;
+}
+
+.Login_Form{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.Enter_Email, .Enter_Password{
+    display: flex;
+}
+
+#Enter_Email_Text, #Enter_Password_Text{
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+#Name_Icon_Image, #Password_Icon_Image{
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"]{
+    height: 28px;
+    border: none;
+}
+
+#Sign_In_Button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 70px;
+
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+#Sign_In_Button:hover{
+    background-color: orange;
+}

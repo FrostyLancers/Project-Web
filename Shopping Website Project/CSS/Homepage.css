@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: Poppins
+}
+
+.Header{
+    display: grid;
+    grid-template-columns: 320px 1fr 200px;
+    background-color: rgb(237, 235, 235);
+}
+
+.Logo_Section{
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#Logo_Image{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+
+#Logo_Text{
+    font-family: Mali;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.Header_Headline{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, auto);
+    font-size: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#Home_Button, #Shopping_Page_Button, #Login_Text{
+    color: black;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.Login_Section{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+#Login_Logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+#Login_Text{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 28px;
+}
+
+#Home_Button:hover, #Shopping_Page_Button:hover, #Login_Text:hover{
+    color: orange;
+}
+
+/************************************ End Header Section ************************************/
+
+.Fruit_n_Vegetables{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.Fruit_n_Vegetables::before{
+    content: "";
+    background-image: url(../Images/Fruit_n_Vegetables.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    /* filter: blur(3px); */
+    filter: brightness(0.7);
+}
+
+#Fruit_n_Vegetables_Text, #Meat_n_Fish_Text, #Sweets_n_Cake_Text{
+    position: relative;
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.1px;
+}
+
+#Fruit_n_Vegetables_Description, #Meat_n_Fish_Description, #Sweets_n_Cake_Description{
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+}
+
+.Meat_n_Fish{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Meat_n_Fish::before{
+    content: "";
+    background-image: url(../Images/Meat_n_Fish.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    /* filter: blur(3px); */
+    filter: brightness(0.7);
+}
+
+.Sweets_n_Cake{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.Sweets_n_Cake::before{
+    content: "";
+    background-image: url(../Images/Sweets_n_Cake.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    /* filter: blur(3px); */
+    filter: brightness(0.7);
+}
+
+/************************************ End Middle Section ************************************/
+
+.Shopping_Button{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#Shopping_Button{
+    font-size: 30px;
+    text-align: center;
+    background-color: orange;
+    border-radius: 10px;
+}
