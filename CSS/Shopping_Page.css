@@ -74,7 +74,10 @@ body{
     margin-top: 1rem;
 }
 
-.container .Goods:hover #Price_Text, .container .Goods:hover #Price_Currency{
+.container .Goods:hover #Price_Text0, .container .Goods:hover #Price_Text1, .container .Goods:hover #Price_Text2,
+.container .Goods:hover #Price_Text3, .container .Goods:hover #Price_Text4, .container .Goods:hover #Price_Text5,
+.container .Goods:hover #Price_Text6, .container .Goods:hover #Price_Text7, .container .Goods:hover #Price_Text8,
+.container .Goods:hover #Price_Currency{
     transition: all .2s linear;
     transform: scale(1.1);
     color: red;
@@ -106,8 +109,7 @@ body{
     opacity: 0.7;
 }
 
-#Amount_in_Cart{
-    border: none;
+#Amount_in_Cart0, #Amount_in_Cart1, #Amount_in_Cart2, #Amount_in_Cart3, #Amount_in_Cart4, #Amount_in_Cart5, #Amount_in_Cart6, #Amount_in_Cart7, #Amount_in_Cart8{
     font-size: 30px;
     font-family: poppins;
     text-align: center;
@@ -115,6 +117,7 @@ body{
     box-sizing: border-box;
     width: 8rem;
     margin-top: 10px;
+    border-width: 2px;
 }
 
 .Total{
@@ -124,6 +127,24 @@ body{
     justify-content: center;
     gap: 1rem;
     margin-top: 10px;
+}
+
+#Calculate_Button{
+    font-family: poppins;
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: 0.3rem;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+#Calculate_Button:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#Calculate_Button:active{
+    opacity: 0.8;
 }
 
 /******************************************************* Start Cart Section *********************************************/
