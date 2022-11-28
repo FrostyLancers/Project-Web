@@ -168,6 +168,13 @@ body{
 #Shopping_Button{
     font-size: 30px;
     text-align: center;
-    background-color: orange;
     border-radius: 10px;
+}
+
+#Shopping_Button:hover{
+    background-color: orange;
+}
+
+#Shopping_Button:active{
+    opacity: 0.8;
 }
