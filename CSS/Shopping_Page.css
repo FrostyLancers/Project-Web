@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    /* transition: all .2s linear; */
+    margin: 0;
+    padding: 0;
+}
+
+.Header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+#Header_Text{
+    text-align: center;
+    font-family: Assistant;
+    font-size: 50px;
+    margin-top: 30px;
+    text-decoration-line: underline;
+}
+
+body{
+    /* background-color: #eee; */
+    background: linear-gradient(to bottom, rgb(197, 240, 197), rgb(10, 122, 10));
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.container img{
+    width: 60%;
+}
+
+.container h2{
+    text-align: center;
+    font-family: poppins;
+    font-size: 40px;
+}
+
+.container .Goods{
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #ffff;
+    box-shadow: 0 .5rem 1rem rgb(86, 86, 86);
+    /* cursor: pointer; */
+}
+
+.container .Goods .Product_Detail:hover img{
+    transform: scale(.9);
+    transition: all .2s linear;
+}
+
+.container .Goods:hover h2{
+    transition: all .2s linear;
+    transform: scale(1.1);
+    color: green;
+}
+
+.Price_of_Product{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 25px;
+    margin-top: 1rem;
+}
+
+.container .Goods:hover #Price_Text, .container .Goods:hover #Price_Currency{
+    transition: all .2s linear;
+    transform: scale(1.1);
+    color: red;
+}
+
+/******************************************** Start Button  Section ******************************************/
+
+.Button_Section{
+    display: flex;
+    gap: 2rem;
+    font-family: poppins;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#Arrow_Left, #Arrow_Right{
+    border: 3px solid black;
+    border-radius: 100px;
+    width: 10%;
+    padding: 0.3rem;
+}
+
+#Arrow_Left:hover, #Arrow_Right:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+#Arrow_Left:active, #Arrow_Right:active{
+    opacity: 0.7;
+}
+
+#Amount_in_Cart{
+    border: none;
+    font-size: 30px;
+    font-family: poppins;
+    text-align: center;
+    height: 40px;
+    box-sizing: border-box;
+    width: 8rem;
+    margin-top: 10px;
+}
+
+.Total{
+    display: flex;
+    font-family: poppins;
+    font-size: 40px;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+/******************************************************* Start Cart Section *********************************************/
+
+.Cart{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 2.5rem;
+}
+
+.Cart_Detail{
+    display: grid;
+
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #ffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+    margin-right: 5rem;
+    box-shadow: 0 .5rem 1rem rgb(86, 86, 86);
+}
+
+.Cart_Subtotal, .Cart_Tax, .Cart_Total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.Cart_Checkout{
+    display: grid;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#Checkout_Button, #Clear_Cart_Button{
+    font-size: 3rem;
+    height: 80%;
+    padding: 2rem 1rem;
+    font-family: Montserrat;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgb(86, 86, 86);
+    width: 20rem;
+    padding-bottom: 3rem;
+}
+
+#Checkout_Button:hover, #Clear_Cart_Button:hover{
+    cursor: pointer;
+    background-color: orange;
+    transition: all .2s linear;
+}
+
+#Checkout_Button:active, #Clear_Cart_Button:active{
+    opacity: 0.6;
+}
+
+#myBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+  
+#myBtn:hover {
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Preview_Container .Preview #Close{
+    width: 5%;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.Preview_Container .Preview #Close:hover{
+    width: 6%;
+    opacity: 1;
+}
+
+.Preview_Container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(30, 29, 29, 0.553);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.Preview_Container .Preview{
+    display: none;
+    padding: 3rem;
+    text-align: center;
+    background: #eee;
+    position: relative;
+    margin: 2rem;
+    width: 40rem;
+}
+
+.Preview_Container .Preview.active{
+    display: inline-block;
+}
+
+.Preview_Container .Preview img{
+    width: 60%;
+}
+
+.Preview_Container .Preview h2{
+    font-family: poppins;
+    font-size: 40px;
+}
+
+.Preview_Container .Preview h3{
+    font-family: poppins;
+    font-size: 30px;
+}
+
+.Preview_Container .Preview .Buttons_Section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+a{
+    font-size: 1.8rem;
+    border: 3px solid black;
+    text-decoration: none;
+    font-family: poppins;
+    color: black;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+a:hover{
+    background-color: orange;
+} */
